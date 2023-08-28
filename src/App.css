@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  background-color: rgb(18, 18, 33);
+  height: 80px;
+}
+nav ul {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0px 23px;
+}
+.left {
+  font-size: 1.3rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px 0px;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2.5rem;
+}
+.leftSection .buttons {
+  padding: 50px 0;
+}
+
+.leftSection .btn {
+  margin: 10px;
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rightSection img {
+  width: 80%;
+  /* margin: 50px 0px; */
+}
+.purple {
+  color: blueviolet;
+}
+nav ul li a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a:hover {
+  color: rgb(129, 129, 250);
+  font-size: 1.01rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#element {
+  color: rgb(129, 129, 250);
+}
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+main hr {
+  border: 0;
+  background-color: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+.text-grey {
+  color: grey;
+}
+.secondSection .box {
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  display: flex;
+  margin: 56px 0;
+}
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0px 100px;
+}
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+}
+.vertical-desc {
+  position: relative;
+  top: 84px;
+  width: 150px;
+  color: grey;
+  font-size: 10px;
+}
+
+footer {
+  background-color: rgb(18, 18, 33);
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 223px;
+}
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 1300px) {
+  
+  .box {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .secondSection .vertical {
+    height: unset;
+  }
+  .vertical-title .vertical-desc {
+    left: 45px;
+  }
+  .secondSection .box {
+    width: 50vw;
+  }
+  
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSection {
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .rightSection img {
+    width: 45vw;
+    margin-bottom: 73px;
+  }
+  .secondSection {
+    height: 141vh;
+  }
+  /* .secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  body {
+    min-width: fit-content;
+  }
+ .image-top{
+top: 122px;
   }
 }
