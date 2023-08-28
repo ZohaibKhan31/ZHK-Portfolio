@@ -99,9 +99,7 @@ function App() {
                 visually appealing and modern interfaces. Technologies used
                 HTML, CSS, API and Bootstrap to build the front-end components
                 and styling of the Weather App. Integrated with external APIs to
-                fetch and display real-time weather data. Utilized JavaScript to
-                handle dynamic content, user interactions, and data
-                manipulation.
+                fetch and display real-time weather data.
               </div>
             </div>
 
@@ -114,8 +112,7 @@ function App() {
                 experience across different devices. Implemented comprehensive
                 cross-browser compatibility testing and responsive design
                 techniques to guarantee flawless user experiences across all
-                modern web browsers and devices. Utilized modern design
-                techniques to create visually appealing and modern interfaces.
+                modern web browsers and devices.
               </div>
             </div>
 
